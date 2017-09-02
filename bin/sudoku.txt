@@ -1,0 +1,19 @@
+2D array holding sudoku result
+Stack with nodes since option
+List of nodes available
+List of nodes temporarily closed
+
+End of search, transfer second list data to result 2D array
+
+How to choose:
+1. Entries with only one option
+2. The only Entry among a square with a particular number
+3. Entry with the fewest options, the option that would eliminate the possible options for most other entries
+
+When to backtrack:
+1. An entry has no options
+
+
+go back up tree, if no other option, restore constraints on related entries and go back up, if 
+option, restore constraints then choose other branch. If only one other option, no need to put on stack
+

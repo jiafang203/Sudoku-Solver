@@ -1,0 +1,7 @@
+Took 39 ms to solve sudoku16ReallyHard, solution is in the folder SudokuProblems, along with other solutions.
+
+End of search, transfer second list data to result 2D array
+
+Efficiency improvements on choosing the next entry:
+1. Choose entries with only one option left
+2. if (1) doesn't exist, get entry with the fewest options, or multiple entries if there are ties. Then, choose the option among the entries that would affect the most number of other entries. If one of those option is to leave another entry with only one option, then that option is selected.
